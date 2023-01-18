@@ -3,9 +3,14 @@
 The purpose of this web app is to provide an education tool for people to aid them in their learning.
 
 ## Road Map
-1. Create Web App Template
-2. Create external cloud database
-3. 
+* Create Web App Template
+* Create external Cloud database
+* Flashcard functionality in Javascript
+* Practice Test page
+* Practice Test functionality with Javascript
+* Connect Flashcard with the Cloud
+* Connect Practice Test with the Cloud
+* Add CSS and make graphics appealing
 
 ## Languages
 * Javascript
