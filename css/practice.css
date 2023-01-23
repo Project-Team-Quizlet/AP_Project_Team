@@ -1,1 +1,45 @@
-
+Html {
+    Box-Sizing: Border-Box;
+}
+*,
+*:Before,
+*:After {
+    Box-Sizing: Inherit;
+}
+Body {
+    Font-Family: Sans-Serif;
+    Padding: 1rem;
+    Background-Color: Orange;
+}
+.Quiz,
+.Choices {
+    List-Style-Type: None;
+    Padding: 0;
+}
+.Choices Li {
+    Margin-Bottom: 5px;
+}
+.Choices Label {
+    Display: Flex;
+    Align-Items: Center;
+}
+.Choices Label,
+Input[Type="Radio"] {
+    Cursor: Pointer;
+}
+Input[Type="Radio"] {
+    Margin-Right: 8px;
+}
+.View-Results {
+    Padding: 1rem;
+    Cursor: Pointer;
+    Font-Size: Inherit;
+    Color: White;
+    Background: Teal;
+    Border-Radius: 8px;
+    Margin-Right: 5px;
+}
+.My-Results {
+    Padding: 1rem;
+    Border: 1px Solid Goldenrod;
+}

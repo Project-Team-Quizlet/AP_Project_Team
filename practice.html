@@ -4,10 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/practice.css">
+    <script src="javascript/practice.js"></script>
     <title>Flash Card</title>
 </head>
+<h1>Practice Tests!</h1>
 
 <body>
-    
+    <Ul Class="Quiz">
+        <Li>
+            <H4>How Many Letters Are There In "JS"?</H4>
+            <Ul Class="Choices">
+                <Li>
+                    <Label
+                        ><Input Type="Radio" Name="Question0" Value="A" /><Span
+                            >2</Span
+                        ></Label
+                    >
+                </Li>
+                <Li>
+                    <Label
+                        ><Input Type="Radio" Name="Question0" Value="B" /><Span
+                            >1</Span
+                        ></Label
+                    >
+                </Li>
+                <Li>
+                    <Label
+                        ><Input Type="Radio" Name="Question0" Value="C" /><Span
+                            >3</Span
+                        ></Label
+                    >
+                </Li>
+                <Li>
+                    <Label
+                        ><Input Type="Radio" Name="Question0" Value="D" /><Span
+                            >4</Span
+                        ></Label
+                    >
+                </Li>
+            </Ul>
+        </Li>
+        <Li>
+            <H4>How Many Letters Are There In "BMX"?</H4>
+            <Ul Class="Choices">
+                <Li>
+                    <Label
+                        ><Input Type="Radio" Name="Question1" Value="A" /><Span
+                            >2</Span
+                        ></Label
+                    >
+                </Li>
+                <Li>
+                    <Label
+                        ><Input Type="Radio" Name="Question1" Value="B" /><Span
+                            >1</Span
+                        ></Label
+                    >
+                </Li>
+                <Li>
+                    <Label
+                        ><Input Type="Radio" Name="Question1" Value="C" /><Span
+                            >3</Span
+                        ></Label
+                    >
+                </Li>
+                <Li>
+                    <Label
+                        ><Input Type="Radio" Name="Question1" Value="D" /><Span
+                            >4</Span
+                        ></Label
+                    >
+                </Li>
+            </Ul>
+        </Li>
+        <Li>
+            <H4>How Many Letters Are There In "A"?</H4>
+            <Ul Class="Choices">
+                <Li>
+                    <Label
+                        ><Input Type="Radio" Name="Question2" Value="A" /><Span
+                            >2</Span
+                        ></Label
+                    >
+                </Li>
+                <Li>
+                    <Label
+                        ><Input Type="Radio" Name="Question2" Value="B" /><Span
+                            >1</Span
+                        ></Label
+                    >
+                </Li>
+                <Li>
+                    <Label
+                        ><Input Type="Radio" Name="Question2" Value="C" /><Span
+                            >3</Span
+                        ></Label
+                    >
+                </Li>
+                <Li>
+                    <Label
+                        ><Input Type="Radio" Name="Question2" Value="D" /><Span
+                            >4</Span
+                        ></Label
+                    >
+                </Li>
+            </Ul>
+        </Li>
+    </Ul>
+    <Button Class="View-Results" Onclick="ReturnScore()">View Results</Button>
+    <Span Id="Myresults" Class="My-Results">My Results Will Appear Here</Span>
 </body>
 </html>
