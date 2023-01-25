@@ -12,10 +12,6 @@ function GetScore() {
     return Score;
 }
 function ReturnScore() {
-    document.GetElementById("Myresults").InnerHTML =
-        "Your Score Is " + GetScore() + "/" + Tot;
-    if (GetScore() > 2) {
-        Console.Log("Bravo");
-    }
+    document.getElementById('Myresults').InnerHTML = "Your Score Is " + GetScore() + "/" + Tot;
 
 }

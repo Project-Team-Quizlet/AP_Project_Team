@@ -9,7 +9,7 @@ Html {
 Body {
     Font-Family: Sans-Serif;
     Padding: 1rem;
-    Background-Color: Orange;
+    Background-Color: rgb(77, 119, 174);
 }
 .Quiz,
 .Choices {
@@ -41,5 +41,5 @@ Input[Type="Radio"] {
 }
 .My-Results {
     Padding: 1rem;
-    Border: 1px Solid Goldenrod;
+    Border: 1px Solid rgb(40, 5, 100);
 }
