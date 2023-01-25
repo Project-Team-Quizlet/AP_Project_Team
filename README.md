@@ -21,6 +21,7 @@ The purpose of this web app is to provide an education tool for people to aid th
 ## Tools
 * Google Firebase - Cloud service
 * Git
+* VS Code
 
 ## Team Members
 * **Team Leader**: Michael Cochran
