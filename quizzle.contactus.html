@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzle Contact Us</title>
+    <link type="text/css" rel="stylesheet" href="./personalstyle.css"> 
+<body>
+    <header>
+    <a id="logo_link" href="quizzle.home.html">
+        <img class="logo" src="./trivialLogo.png" alt="Quizzle Logo">
+        </a>
+         <nav>
+        <a href="./quizzle.home.html">Quizzle Home</a>
+        <a href="./quizzle.userinput.html">Make your Quizzles</a>
+        <a href="./quizzle.flashcards.html">Flash Cards</a>
+               <a href="./quizzle.contactus.html">Contact Us</a>
+            </nav>
+</header>
+<div id="hero">
+    <div id="hero-box">
+        <img class="hero-img" src="" alt="Quizzle Background">
+    </div>
+    <section id="hero-msg">
+        <h1 class="home-title">CONTACT US!!!</h1>
+        <h4 class="h44"></h4>
+        <div class='button-box'>
+        </div>
+    </section>
+</div>
+<main>
+    <form action="/my-handling-form-page" method="post">
+        <div id="feedback"></div>
+        <ul>
+            <li>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name">
+            </li>
+            <li>
+              <label for="mail">E-mail:</label>
+              <input type="email" id="mail" name="user_email">
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </li>
+           </ul>
+           <input type="text" value="">
+           <li class="button">
+            <button type="submit">Send your message</button>
+          </li>
+        </form>
+</main>
+<footer>
+    <h3>Quizzle &copy; 2023</h3>
+    <h3><a href="quizzle.contactus.html">Contact Us</a></h3>
+    <div class="social">
+        <a href="https://facebook.com">
+            <img src="facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com">
+            <img src="twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com">
+            <img src="instagram.png" alt="instagram icon">
+        </a>
+      
+    </div>
+</footer>
+
+<script>
+    
+    const feedbackElement = document.getElementById('feedback');
+   
+    const formElement = document.forms[0];
+   
+    formElement.addEventListener('submit', function(e) {
+      
+        e.preventDefault();
+       
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+       
+        feedbackElement.style.display = "block";
+       
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+              
+</body>
