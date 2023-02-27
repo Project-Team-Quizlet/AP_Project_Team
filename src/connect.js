@@ -4,6 +4,7 @@ import { getFirestore, collection, getDocs, addDoc, deleteDoc, doc, onSnapshot, 
                                                              // getDocs service to read data
                                                              // addDoc adds data to the database
 
+
 const firebaseConfig = {
     apiKey: "AIzaSyBCoIA-ZDTMvXNvcFZ23HFfjn6HA_2gdo0",
     authDomain: "flashcard-database-proj.firebaseapp.com",
