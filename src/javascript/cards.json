@@ -1,6 +1,6 @@
 [
     {"What is Python?":"Python is a high-level programming language used for a variety of applications, including web development, scientific computing, data analysis, and artificial intelligence."},
-    {"How do you print ""Hello, world!"" to the console in Python?":"You can use the print() function, like this: print(""Hello, world!"")."},
+    {"How do you print \"Hello, world!\" to the console in Python?":"You can use the print() function, like this: print(\"Hello, world!\")."},
     {"What is the difference between single and double quotes in Python?": "There is no difference in functionality between single and double quotes in Python. Both can be used to represent string literals."},
     {"How do you define a variable in Python?": "You can define a variable by giving it a name and assigning it a value using the = operator, like this: my_variable = 42."},
     {"What is the difference between == and = in Python?": "== is used to compare two values for equality, while = is used to assign a value to a variable."},
@@ -10,13 +10,13 @@
     {"How do you define a function in Python?": "You can define a function using the def keyword, followed by the function name and its parameters, like this: def my_function(param1, param2):."},
     {"How do you import a module in Python?": "You can import a module using the import keyword, like this: import math. Once a module is imported, you can use its functions and variables in your code."},
     {"What is JavaScript?": "JavaScript is a high-level programming language used for building dynamic web pages and web applications."},
-    {"How do you print ""Hello, world!"" to the console in JavaScript?": "You can use the console.log() method, like this: console.log(""Hello, world!"");"},
+    {"How do you print \"Hello, world!\" to the console in JavaScript?": "You can use the console.log() method, like this: console.log(\"Hello, world!\");"},
     {"What is the difference between let, const, and var in JavaScript?": "let and const are block-scoped variables, while var is function-scoped. const is a constant, which means its value cannot be changed once it is assigned, while let and var can be reassigned."},
     {"How do you define a variable in JavaScript?": "You can define a variable using the let, const, or var keywords, followed by the variable name and its initial value, like this: let myVariable = 42;"},
     {"How do you create an array in JavaScript?": "You can create an array by enclosing a comma-separated sequence of values in square brackets, like this: let myArray = [1, 2, 3];"},
     {"How do you access an element in an array in JavaScript?": "You can access an element in an array by using its index, which starts at 0. For example, to access the first element in an array, you can use myArray[0]."},
     {"What is a function in JavaScript?": "A function is a block of code that performs a specific task. Functions can take parameters and return values."},
     {"How do you define a function in JavaScript?": "You can define a function using the function keyword, followed by the function name and its parameters, like this: function myFunction(param1, param2) { // function body }"},
-    {"How do you add an event listener to an HTML element in JavaScript?": "You can add an event listener using the addEventListener() method, like this: document.getElementById(""myButton"").addEventListener(""click"", myFunction);"},
-    {"How do you use the ternary operator in JavaScript?": "The ternary operator is a shorthand way of writing an if/else statement. It takes the form of condition ? expression1 : expression2, where condition is a Boolean expression, expression1 is the value to be returned if the condition is true, and expression2 is the value to be returned if the condition is false. For example: let result = age >= 18 ? ""You are an adult"" : ""You are a minor"";"}
+    {"How do you add an event listener to an HTML element in JavaScript?": "You can add an event listener using the addEventListener() method, like this: document.getElementById(\"myButton\").addEventListener(\"click\", myFunction);"},
+    {"How do you use the ternary operator in JavaScript?": "The ternary operator is a shorthand way of writing an if/else statement. It takes the form of condition ? expression1 : expression2, where condition is a Boolean expression, expression1 is the value to be returned if the condition is true, and expression2 is the value to be returned if the condition is false. For example: let result = age >= 18 ? \"You are an adult\" : \"You are a minor\";"}
 ]
