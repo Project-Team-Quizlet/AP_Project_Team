@@ -30,6 +30,17 @@
        </div>
 <main>
     <p> Here is where your made quizzle flashcards will be stored</p>
+    <form>
+        <label for="front">Front:</label>
+        <input type="text" id="front" name="front"><br><br>
+        
+        <label for="back">Back:</label>
+        <input type="text" id="back" name="back"><br><br>
+        
+        <button type="button" onclick="createFlashcard()">Create Flashcard</button>
+      </form>
+      
+      <div id="flashcards"></div>
 </main>
 <footer>
     <h3>Quizzle &copy; 2023</h3>
