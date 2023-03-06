@@ -23,7 +23,7 @@ const db = getFirestore()
 
 //collection reference
 
-const colRef = collection(db, "books")   //<<<<<<Basic idea is to create a reference to some piece or part of data and apply a function to it
+const colRef = collection(db, "Card")   //<<<<<<Basic idea is to create a reference to some piece or part of data and apply a function to it
 
 // get collection data
 // getDocs(colRef)
@@ -40,16 +40,17 @@ const colRef = collection(db, "books")   //<<<<<<Basic idea is to create a refer
 
 // real time collection data
  onSnapshot(colRef, ((snapshot) => {
-  let books = [ ]
+  let cards = [ ]
     snapshot.docs.forEach((doc) => {
-        books.push({...doc.data(), id: doc.id})
+        cards.push({...doc.data(), id: doc.id})
     })
-    console.log(books)
+    console.log(cards)
  }))
 
 // queries can also be made in the Firestore data base
   // add data
 
+function AddToDatabase(){
   const addBookForm = document.querySelector(".add")
   addBookForm.addEventListener("submit", (e) => {
     e.preventDefault()
@@ -62,6 +63,8 @@ const colRef = collection(db, "books")   //<<<<<<Basic idea is to create a refer
         addBookForm.reset()
     })
 })
+}
+  
 
 // delete data
   const deleteBookForm = document.querySelector(".delete")
