@@ -50,23 +50,30 @@ const colRef = collection(db, "Card")   //<<<<<<Basic idea is to create a refere
 // queries can also be made in the Firestore data base
   // add data
 
-function AddToDatabase(){
-  const addBookForm = document.querySelector(".add")
-  addBookForm.addEventListener("submit", (e) => {
+
+const addCardForm = document.querySelector(".addCard")
+  addCardForm.addEventListener("submit", (e) => {
     e.preventDefault()
+    console.log("Working")
 
     addDoc(colRef,{
-        title: addBookForm.title.value,
-        author: addBookForm.author.value
+        Front: addCardForm.front.value,
+        Back: addCardForm.back.value
     })
     .then(() => {
-        addBookForm.reset()
+        addCardForm.reset()
     })
-})
-}
+
+// addCardForm.addEventListener("submit", (e) => {
+//   e.preventDefault();
+
+//   AddToDatabase();
+
+ })
   
 
 // delete data
+function DeleteData() {
   const deleteBookForm = document.querySelector(".delete")
   deleteBookForm.addEventListener("submit", (e) => {
       e.preventDefault()
@@ -79,3 +86,4 @@ function AddToDatabase(){
       deleteBookForm.reset()
     })
   })
+}  
