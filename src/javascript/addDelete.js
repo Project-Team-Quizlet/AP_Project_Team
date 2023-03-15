@@ -1,6 +1,6 @@
-import { db, colRef } from "./connect";
-import { addDoc, deleteDoc, doc } from "firebase/firestore";
-import cards from "./cards";
+import { db, colRef } from "./connect"; // importing my initialized database and collection reference from connect.js so they can be used in this Javascript file
+import { addDoc, deleteDoc, doc } from "firebase/firestore"; // importing these functions from the firebase library so they can be used in this Javascript file
+import cards from "./cards"; //><<< importingd the card array from cards.js so it can be used in this javascript file
 
 // targets addcardform in index html
 export const addCardForm = document.querySelector(".addCard");
@@ -55,4 +55,4 @@ function addLine() {
 //   console.log(element.Front);
 // });
 
-export default { AddData, DeleteData, addCardForm };
+export default { AddData, DeleteData, addCardForm }; //<<<< exporting these variables and functions so they can be used and referred to in other Javascript files(specifically connect.js)
