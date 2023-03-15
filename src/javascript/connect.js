@@ -1,9 +1,10 @@
 import { initializeApp } from "firebase/app" // imports firebase function to connect to Database
-import { getFirestore, collection, getDocs, addDoc, deleteDoc, doc, onSnapshot, query, where  } from "firebase/firestore"// importing firestore services // collection service to link to a specific collection in the database
-                                                             // collection service to link to a specific collection in the database
-                                                             // getDocs service to read data
-                                                             // addDoc adds data to the database
-
+import { getFirestore, collection, getDocs, addDoc, deleteDoc, doc, onSnapshot, query, where  } from "firebase/firestore"
+// importing firestore services // collection service to link to a specific collection in the database
+// collection service to link to a specific collection in the database
+// getDocs service to read data
+// addDoc adds data to the database
+import {addCardForm} from "./addDelete"
 
 const firebaseConfig = {
     apiKey: "AIzaSyBCoIA-ZDTMvXNvcFZ23HFfjn6HA_2gdo0",
@@ -19,24 +20,12 @@ const firebaseConfig = {
 initializeApp(firebaseConfig)
 
 // initializing services
-const db = getFirestore()
+export const db = getFirestore()
 
 //collection reference
 
-const colRef = collection(db, "Card")   //<<<<<<Basic idea is to create a reference to some piece or part of data and apply a function to it
+export const colRef = collection(db, "Card")   //<<<<<<Basic idea is to create a reference to some a collection in our database
 
-// get collection data
-// getDocs(colRef)
-//   .then((snapshot)=>{
-//     let books = [ ]
-//     snapshot.docs.forEach((doc) => {
-//         books.push({...doc.data(), id: doc.id})
-//     })
-//     console.log(books)
-//   })
-//   .catch(err =>{
-//     console.log(err.message)
-//   })
 
 // real time collection data
  onSnapshot(colRef, ((snapshot) => {
@@ -51,39 +40,12 @@ const colRef = collection(db, "Card")   //<<<<<<Basic idea is to create a refere
   // add data
 
 
-const addCardForm = document.querySelector(".addCard")
-  addCardForm.addEventListener("submit", (e) => {
-    e.preventDefault()
-    console.log("Working")
 
-    addDoc(colRef,{
-        Front: addCardForm.front.value,
-        Back: addCardForm.back.value
-    })
-    .then(() => {
-        addCardForm.reset()
-    })
 
-// addCardForm.addEventListener("submit", (e) => {
-//   e.preventDefault();
 
-//   AddToDatabase();
+    
 
- })
+ 
   
 
-// delete data
-function DeleteData() {
-  const deleteBookForm = document.querySelector(".delete")
-  deleteBookForm.addEventListener("submit", (e) => {
-      e.preventDefault()
 
-
-  const docRef = doc(db, "books", deleteBookForm.id.value);
-
-  deleteDoc(docRef)
-    .then(() =>{
-      deleteBookForm.reset()
-    })
-  })
-}  
