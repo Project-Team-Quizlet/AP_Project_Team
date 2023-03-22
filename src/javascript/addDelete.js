@@ -55,4 +55,4 @@ function addLine() {
 //   console.log(element.Front);
 // });
 
-export default { AddData, DeleteData, addCardForm }; //<<<< exporting these variables and functions so they can be used and referred to in other Javascript files(specifically connect.js)
+export default { AddData, addCardForm }; //<<<< exporting these variables and functions so they can be used and referred to in other Javascript files(specifically connect.js)

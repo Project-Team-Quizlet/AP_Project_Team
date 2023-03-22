@@ -35,6 +35,7 @@ export const db = getFirestore();
 //collection reference
 
 export const colRef = collection(db, "Card"); //<<<<<<Basic idea is to create a reference to some a collection in our database
+// export const colRefMath = collection(db, "Math");
 
 // real time collection data
 onSnapshot(colRef, (snapshot) => {
