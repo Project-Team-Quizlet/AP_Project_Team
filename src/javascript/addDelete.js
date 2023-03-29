@@ -1,15 +1,20 @@
 import { db, colRef } from "./connect"; // importing my initialized database and collection reference from connect.js so they can be used in this Javascript file
 import { addDoc, deleteDoc, doc } from "firebase/firestore"; // importing these functions from the firebase library so they can be used in this Javascript file
-import cards from "./cards"; //><<< importingd the card array from cards.js so it can be used in this javascript file
+import cards from "./cards"; //><<< importing the card array from cards.js so it can be used in this javascript file
 
 // targets addcardform in index html
 export const addCardForm = document.querySelector(".addCard");
-addCardForm.addEventListener("submit", (e) => {
-  e.preventDefault();
+function addcard(){
+  addCardForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+  
+    AddData();
+    console.log("Working");
+  });
 
-  AddData();
-  console.log("Working");
-});
+}
+
+
 
 // this function will add data to the database through the make your own flashcard form
 function AddData() {

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quizzle Flash Cards</title>
+    <script defer src="/dist/bundle.js"></script>
     <link type="text/css" rel="stylesheet" href="../css/personalstyle.css">
 
 <body>
@@ -29,19 +30,21 @@
             
     </div>
     <div class="card_change">
-        <a href="#" class="previous round">&#8249;</a>
-        <a href="#" class="next round">&#8250;</a>
+        <button href="#" id = "prev" class="previous round">&#8249;</button>
+        <button href="#" id = "nxt" class="next round">&#8250;</button>
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
+                    <!-- <p class="card-front"></p> -->
                     <h1>Front</h1>
-                    <p>Front line 1</p>
-                    <p>Front line 2</p>
+                    <p class="card-front"></p>
+                    <!-- <p>Front line 2</p> -->
                 </div>
                 <div class="flip-card-back">
+                    <!-- <p class="card-back"></p> -->
                     <h1>Back</h1>
-                    <p>Back line 1</p>
-                    <p>Back line 2</p>
+                    <p class="card-back"></p>
+                    <!-- <p>Back line 2</p> -->
                 </div>
             </div>
         </div>

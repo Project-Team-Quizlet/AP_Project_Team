@@ -37,6 +37,11 @@ export const db = getFirestore();
 export const colRef = collection(db, "Card"); //<<<<<<Basic idea is to create a reference to some a collection in our database
 // export const colRefMath = collection(db, "Math");
 
+const cardFront = document.querySelector(".card-front");
+const cardBack = document.querySelector(".card-back");
+const nextButton = document.querySelector("#nxt");
+const previousButton = document.querySelector("#prev");
+
 // real time collection data
 onSnapshot(colRef, (snapshot) => {
   let cards = [];
@@ -44,6 +49,30 @@ onSnapshot(colRef, (snapshot) => {
     cards.push({ ...doc.data(), id: doc.id });
   });
   console.log(cards);
+  console.log(cards[0]);
+  console.log(cards.length);
+
+  let cardNumber = 0;
+
+  nextButton.addEventListener("click", () => {
+    cardNumber += 1;
+    if (cardNumber > cards.length - 1) {
+      cardNumber = 0;
+    }
+    console.log(cardNumber);
+    cardFront.innerHTML = cards[cardNumber].Front;
+    cardBack.innerHTML = cards[cardNumber].Back;
+  });
+
+  previousButton.addEventListener("click", () => {
+    cardNumber -= 1;
+    if (cardNumber < 0) {
+      cardNumber = cards.length - 1;
+    }
+    console.log(cardNumber);
+    cardFront.innerHTML = cards[cardNumber].Front;
+    cardBack.innerHTML = cards[cardNumber].Back;
+  });
 });
 
 // queries can also be made in the Firestore data base
