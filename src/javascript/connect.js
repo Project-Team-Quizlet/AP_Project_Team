@@ -49,30 +49,28 @@ onSnapshot(colRef, (snapshot) => {
     cards.push({ ...doc.data(), id: doc.id });
   });
   console.log(cards);
-  console.log(cards[0]);
-  console.log(cards.length);
 
   let cardNumber = 0;
 
-  nextButton.addEventListener("click", () => {
-    cardNumber += 1;
-    if (cardNumber > cards.length - 1) {
-      cardNumber = 0;
-    }
-    console.log(cardNumber);
-    cardFront.innerHTML = cards[cardNumber].Front;
-    cardBack.innerHTML = cards[cardNumber].Back;
-  });
+  // nextButton.addEventListener("click", () => {
+  //   cardNumber += 1;
+  //   if (cardNumber > cards.length - 1) {
+  //     cardNumber = 0;
+  //   }
+  //   console.log(cardNumber);
+  //   cardFront.innerHTML = cards[cardNumber].Front;
+  //   cardBack.innerHTML = cards[cardNumber].Back;
+  // });
 
-  previousButton.addEventListener("click", () => {
-    cardNumber -= 1;
-    if (cardNumber < 0) {
-      cardNumber = cards.length - 1;
-    }
-    console.log(cardNumber);
-    cardFront.innerHTML = cards[cardNumber].Front;
-    cardBack.innerHTML = cards[cardNumber].Back;
-  });
+  // previousButton.addEventListener("click", () => {
+  //   cardNumber -= 1;
+  //   if (cardNumber < 0) {
+  //     cardNumber = cards.length - 1;
+  //   }
+  //   console.log(cardNumber);
+  //   cardFront.innerHTML = cards[cardNumber].Front;
+  //   cardBack.innerHTML = cards[cardNumber].Back;
+  // });
 });
 
 // queries can also be made in the Firestore data base

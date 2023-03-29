@@ -4,15 +4,12 @@ import cards from "./cards"; //><<< importing the card array from cards.js so it
 
 // targets addcardform in index html
 export const addCardForm = document.querySelector(".addCard");
-function addcard(){
   addCardForm.addEventListener("submit", (e) => {
     e.preventDefault();
   
     AddData();
     console.log("Working");
   });
-
-}
 
 
 
