@@ -6,17 +6,14 @@ The purpose of this web app is to provide an education tool for people to aid th
 * Create Web App Template
 * Create external Cloud database
 * Flashcard functionality in Javascript
-* Practice Test page
-* Practice Test functionality with Javascript
 * Connect Flashcard with the Cloud
-* Connect Practice Test with the Cloud
 * Add CSS and make graphics appealing
 
 ## Languages
 * Javascript
 * Html
 * CSS
-* Python
+* Node.js
 
 ## Tools
 * Google Firebase - Cloud service
