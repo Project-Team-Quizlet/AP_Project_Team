@@ -20,10 +20,3 @@ The purpose of this web app is to provide an education tool for people to aid th
 * Git
 * VS Code
 
-## Team Members
-* **Team Leader**: Michael Cochran
-* **Project Manager**: Brodie Busby
-* **Graphic Designer**: Papayaw Agyeman-manu
-* **Quality Assurance**: Zach Bush
-* **Configuration Manager**: Dakota Walters
-* **Document Manager**: Corey Moses
